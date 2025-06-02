@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MediaTek86.vue
 {
-    public partial class Absences : Form
+    public partial class FrmPersonnel : Form
     {
-        public Absences()
+        public FrmPersonnel()
         {
             InitializeComponent();
         }

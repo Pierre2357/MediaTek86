@@ -1,6 +1,6 @@
 ﻿namespace MediaTek86.vue
 {
-    partial class Personnel
+    partial class FrmPersonnel
     {
         /// <summary>
         /// Required designer variable.

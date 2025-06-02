@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MediaTek86.vue
+namespace MediaTek86
 {
-    public partial class Personnel : Form
+    public partial class FrmConnexion : Form
     {
-        public Personnel()
+        public FrmConnexion()
         {
             InitializeComponent();
+        }
+
+        private void Connexion_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

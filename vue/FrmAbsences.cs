@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MediaTek86
+namespace MediaTek86.vue
 {
-    public partial class Connexion : Form
+    public partial class FrmAbsences : Form
     {
-        public Connexion()
+        public FrmAbsences()
         {
             InitializeComponent();
-        }
-
-        private void Connexion_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

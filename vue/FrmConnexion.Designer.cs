@@ -1,6 +1,6 @@
 ﻿namespace MediaTek86
 {
-    partial class Connexion
+    partial class FrmConnexion
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

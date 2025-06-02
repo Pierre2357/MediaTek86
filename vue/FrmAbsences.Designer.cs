@@ -1,6 +1,6 @@
 ﻿namespace MediaTek86.vue
 {
-    partial class Absences
+    partial class FrmAbsences
     {
         /// <summary>
         /// Required designer variable.
