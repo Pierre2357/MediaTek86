@@ -12,10 +12,13 @@ namespace MediaTek86.modele
     public class Service
     {
         /// <summary>
-        /// Propriétés de la classe (correspondant aux champs de la table service de la base de données)
+        /// Propriété de la classe service de la base de données
         /// </summary>
         public int Idservice { get; }
-        public string Nom { get; set; }
+        /// <summary>
+        /// Propriété de la classe service de la base de données
+        /// </summary>
+        public string Nom { get; }
 
         /// <summary>
         /// Constructeur de la classe pour valoriser les propriétés
@@ -26,6 +29,15 @@ namespace MediaTek86.modele
         {
             this.Idservice = idservice;
             this.Nom = nom;
+        }
+
+        /// <summary>
+        /// Défini l'information à afficher (juste le nom)
+        /// </summary>
+        /// <returns>nom du service</returns>
+        public override string ToString()
+        {
+            return this.Nom;
         }
     }
 }

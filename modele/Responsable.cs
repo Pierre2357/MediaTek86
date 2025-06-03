@@ -12,9 +12,12 @@ namespace MediaTek86.modele
     public class Responsable
     {
         /// <summary>
-        /// Propriétés de la classe (correspondant aux champs de la table responsable de la base de données)
+        /// Propriétés de la classe responsable de la base de données
         /// </summary>
         public string Login{ get; }
+        /// <summary>
+        /// Propriétés de la classe responsable de la base de données
+        /// </summary>
         public string Pwd { get; }
 
         /// <summary>

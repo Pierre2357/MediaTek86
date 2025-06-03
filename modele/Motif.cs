@@ -12,10 +12,13 @@ namespace MediaTek86.modele
     public class Motif
     {
         /// <summary>
-        /// Propriétés de la classe (correspondant aux champs de la table motif de la base de données)
+        /// Propriété de la classe motif de la base de données
         /// </summary>
         public int Idmotif { get; }
-        public string Libelle { get; set; }
+        /// <summary>
+        /// Propriété de la classe motif de la base de données
+        /// </summary>
+        public string Libelle { get; }
 
         /// <summary>
         /// Constructeur de la classe pour valoriser les propriétés
@@ -26,6 +29,15 @@ namespace MediaTek86.modele
         {
             this.Idmotif = idmotif;
             this.Libelle = libelle;
+        }
+
+        /// <summary>
+        /// Défini l'information à afficher (juste le libellé)
+        /// </summary>
+        /// <returns>libellé du motif</returns>
+        public override string ToString()
+        {
+            return this.Libelle;
         }
     }
 }

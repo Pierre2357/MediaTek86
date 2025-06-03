@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.grbAbsences = new System.Windows.Forms.GroupBox();
-            this.grbAjoutAbsences = new System.Windows.Forms.GroupBox();
-            this.dgvAbsences = new System.Windows.Forms.DataGridView();
-            this.btnModifAbsences = new System.Windows.Forms.Button();
             this.btnSupprAbsences = new System.Windows.Forms.Button();
-            this.dtpDebutAbsence = new System.Windows.Forms.DateTimePicker();
-            this.dtpFinAbsence = new System.Windows.Forms.DateTimePicker();
-            this.lblDebutAbsence = new System.Windows.Forms.Label();
-            this.lblFinAbsence = new System.Windows.Forms.Label();
-            this.lblMotifAbsence = new System.Windows.Forms.Label();
-            this.cboMotifAbsence = new System.Windows.Forms.ComboBox();
-            this.btnConfirmAjoutAbsence = new System.Windows.Forms.Button();
+            this.btnModifAbsences = new System.Windows.Forms.Button();
+            this.dgvAbsences = new System.Windows.Forms.DataGridView();
+            this.grbAjoutAbsences = new System.Windows.Forms.GroupBox();
             this.btnAnnulAjoutAbsence = new System.Windows.Forms.Button();
+            this.btnConfirmAjoutAbsence = new System.Windows.Forms.Button();
+            this.cboMotifAbsence = new System.Windows.Forms.ComboBox();
+            this.lblMotifAbsence = new System.Windows.Forms.Label();
+            this.lblFinAbsence = new System.Windows.Forms.Label();
+            this.lblDebutAbsence = new System.Windows.Forms.Label();
+            this.dtpFinAbsence = new System.Windows.Forms.DateTimePicker();
+            this.dtpDebutAbsence = new System.Windows.Forms.DateTimePicker();
             this.grbAbsences.SuspendLayout();
-            this.grbAjoutAbsences.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAbsences)).BeginInit();
+            this.grbAjoutAbsences.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbAbsences
@@ -57,6 +57,35 @@
             this.grbAbsences.TabIndex = 0;
             this.grbAbsences.TabStop = false;
             this.grbAbsences.Text = "absences";
+            // 
+            // btnSupprAbsences
+            // 
+            this.btnSupprAbsences.Location = new System.Drawing.Point(87, 221);
+            this.btnSupprAbsences.Name = "btnSupprAbsences";
+            this.btnSupprAbsences.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprAbsences.TabIndex = 2;
+            this.btnSupprAbsences.Text = "supprimer";
+            this.btnSupprAbsences.UseVisualStyleBackColor = true;
+            this.btnSupprAbsences.Click += new System.EventHandler(this.btnSupprAbsences_Click);
+            // 
+            // btnModifAbsences
+            // 
+            this.btnModifAbsences.Location = new System.Drawing.Point(6, 221);
+            this.btnModifAbsences.Name = "btnModifAbsences";
+            this.btnModifAbsences.Size = new System.Drawing.Size(75, 23);
+            this.btnModifAbsences.TabIndex = 1;
+            this.btnModifAbsences.Text = "modifier";
+            this.btnModifAbsences.UseVisualStyleBackColor = true;
+            this.btnModifAbsences.Click += new System.EventHandler(this.btnModifAbsences_Click);
+            // 
+            // dgvAbsences
+            // 
+            this.dgvAbsences.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAbsences.Location = new System.Drawing.Point(6, 19);
+            this.dgvAbsences.Name = "dgvAbsences";
+            this.dgvAbsences.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvAbsences.Size = new System.Drawing.Size(635, 196);
+            this.dgvAbsences.TabIndex = 0;
             // 
             // grbAjoutAbsences
             // 
@@ -75,63 +104,33 @@
             this.grbAjoutAbsences.TabStop = false;
             this.grbAjoutAbsences.Text = "ajouter absence";
             // 
-            // dgvAbsences
+            // btnAnnulAjoutAbsence
             // 
-            this.dgvAbsences.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAbsences.Location = new System.Drawing.Point(6, 19);
-            this.dgvAbsences.Name = "dgvAbsences";
-            this.dgvAbsences.Size = new System.Drawing.Size(635, 196);
-            this.dgvAbsences.TabIndex = 0;
+            this.btnAnnulAjoutAbsence.Location = new System.Drawing.Point(87, 80);
+            this.btnAnnulAjoutAbsence.Name = "btnAnnulAjoutAbsence";
+            this.btnAnnulAjoutAbsence.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulAjoutAbsence.TabIndex = 7;
+            this.btnAnnulAjoutAbsence.Text = "annuler";
+            this.btnAnnulAjoutAbsence.UseVisualStyleBackColor = true;
+            this.btnAnnulAjoutAbsence.Click += new System.EventHandler(this.btnAnnulAjoutAbsence_Click);
             // 
-            // btnModifAbsences
+            // btnConfirmAjoutAbsence
             // 
-            this.btnModifAbsences.Location = new System.Drawing.Point(6, 221);
-            this.btnModifAbsences.Name = "btnModifAbsences";
-            this.btnModifAbsences.Size = new System.Drawing.Size(75, 23);
-            this.btnModifAbsences.TabIndex = 1;
-            this.btnModifAbsences.Text = "modifier";
-            this.btnModifAbsences.UseVisualStyleBackColor = true;
+            this.btnConfirmAjoutAbsence.Location = new System.Drawing.Point(6, 80);
+            this.btnConfirmAjoutAbsence.Name = "btnConfirmAjoutAbsence";
+            this.btnConfirmAjoutAbsence.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmAjoutAbsence.TabIndex = 6;
+            this.btnConfirmAjoutAbsence.Text = "confirmer";
+            this.btnConfirmAjoutAbsence.UseVisualStyleBackColor = true;
+            this.btnConfirmAjoutAbsence.Click += new System.EventHandler(this.btnConfirmAjoutAbsence_Click);
             // 
-            // btnSupprAbsences
+            // cboMotifAbsence
             // 
-            this.btnSupprAbsences.Location = new System.Drawing.Point(87, 221);
-            this.btnSupprAbsences.Name = "btnSupprAbsences";
-            this.btnSupprAbsences.Size = new System.Drawing.Size(75, 23);
-            this.btnSupprAbsences.TabIndex = 2;
-            this.btnSupprAbsences.Text = "supprimer";
-            this.btnSupprAbsences.UseVisualStyleBackColor = true;
-            // 
-            // dtpDebutAbsence
-            // 
-            this.dtpDebutAbsence.Location = new System.Drawing.Point(46, 27);
-            this.dtpDebutAbsence.Name = "dtpDebutAbsence";
-            this.dtpDebutAbsence.Size = new System.Drawing.Size(180, 20);
-            this.dtpDebutAbsence.TabIndex = 0;
-            // 
-            // dtpFinAbsence
-            // 
-            this.dtpFinAbsence.Location = new System.Drawing.Point(356, 27);
-            this.dtpFinAbsence.Name = "dtpFinAbsence";
-            this.dtpFinAbsence.Size = new System.Drawing.Size(200, 20);
-            this.dtpFinAbsence.TabIndex = 1;
-            // 
-            // lblDebutAbsence
-            // 
-            this.lblDebutAbsence.AutoSize = true;
-            this.lblDebutAbsence.Location = new System.Drawing.Point(6, 33);
-            this.lblDebutAbsence.Name = "lblDebutAbsence";
-            this.lblDebutAbsence.Size = new System.Drawing.Size(34, 13);
-            this.lblDebutAbsence.TabIndex = 2;
-            this.lblDebutAbsence.Text = "debut";
-            // 
-            // lblFinAbsence
-            // 
-            this.lblFinAbsence.AutoSize = true;
-            this.lblFinAbsence.Location = new System.Drawing.Point(332, 32);
-            this.lblFinAbsence.Name = "lblFinAbsence";
-            this.lblFinAbsence.Size = new System.Drawing.Size(18, 13);
-            this.lblFinAbsence.TabIndex = 3;
-            this.lblFinAbsence.Text = "fin";
+            this.cboMotifAbsence.FormattingEnabled = true;
+            this.cboMotifAbsence.Location = new System.Drawing.Point(46, 53);
+            this.cboMotifAbsence.Name = "cboMotifAbsence";
+            this.cboMotifAbsence.Size = new System.Drawing.Size(180, 21);
+            this.cboMotifAbsence.TabIndex = 5;
             // 
             // lblMotifAbsence
             // 
@@ -142,45 +141,51 @@
             this.lblMotifAbsence.TabIndex = 4;
             this.lblMotifAbsence.Text = "motif";
             // 
-            // cboMotifAbsence
+            // lblFinAbsence
             // 
-            this.cboMotifAbsence.FormattingEnabled = true;
-            this.cboMotifAbsence.Location = new System.Drawing.Point(46, 53);
-            this.cboMotifAbsence.Name = "cboMotifAbsence";
-            this.cboMotifAbsence.Size = new System.Drawing.Size(180, 21);
-            this.cboMotifAbsence.TabIndex = 5;
+            this.lblFinAbsence.AutoSize = true;
+            this.lblFinAbsence.Location = new System.Drawing.Point(332, 32);
+            this.lblFinAbsence.Name = "lblFinAbsence";
+            this.lblFinAbsence.Size = new System.Drawing.Size(18, 13);
+            this.lblFinAbsence.TabIndex = 3;
+            this.lblFinAbsence.Text = "fin";
             // 
-            // btnConfirmAjoutAbsence
+            // lblDebutAbsence
             // 
-            this.btnConfirmAjoutAbsence.Location = new System.Drawing.Point(6, 80);
-            this.btnConfirmAjoutAbsence.Name = "btnConfirmAjoutAbsence";
-            this.btnConfirmAjoutAbsence.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirmAjoutAbsence.TabIndex = 6;
-            this.btnConfirmAjoutAbsence.Text = "confirmer";
-            this.btnConfirmAjoutAbsence.UseVisualStyleBackColor = true;
+            this.lblDebutAbsence.AutoSize = true;
+            this.lblDebutAbsence.Location = new System.Drawing.Point(6, 33);
+            this.lblDebutAbsence.Name = "lblDebutAbsence";
+            this.lblDebutAbsence.Size = new System.Drawing.Size(34, 13);
+            this.lblDebutAbsence.TabIndex = 2;
+            this.lblDebutAbsence.Text = "debut";
             // 
-            // btnAnnulAjoutAbsence
+            // dtpFinAbsence
             // 
-            this.btnAnnulAjoutAbsence.Location = new System.Drawing.Point(87, 80);
-            this.btnAnnulAjoutAbsence.Name = "btnAnnulAjoutAbsence";
-            this.btnAnnulAjoutAbsence.Size = new System.Drawing.Size(75, 23);
-            this.btnAnnulAjoutAbsence.TabIndex = 7;
-            this.btnAnnulAjoutAbsence.Text = "annuler";
-            this.btnAnnulAjoutAbsence.UseVisualStyleBackColor = true;
+            this.dtpFinAbsence.Location = new System.Drawing.Point(356, 27);
+            this.dtpFinAbsence.Name = "dtpFinAbsence";
+            this.dtpFinAbsence.Size = new System.Drawing.Size(200, 20);
+            this.dtpFinAbsence.TabIndex = 1;
             // 
-            // Absences
+            // dtpDebutAbsence
+            // 
+            this.dtpDebutAbsence.Location = new System.Drawing.Point(46, 27);
+            this.dtpDebutAbsence.Name = "dtpDebutAbsence";
+            this.dtpDebutAbsence.Size = new System.Drawing.Size(180, 20);
+            this.dtpDebutAbsence.TabIndex = 0;
+            // 
+            // FrmAbsences
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 384);
             this.Controls.Add(this.grbAjoutAbsences);
             this.Controls.Add(this.grbAbsences);
-            this.Name = "Absences";
+            this.Name = "FrmAbsences";
             this.Text = "Absences";
             this.grbAbsences.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAbsences)).EndInit();
             this.grbAjoutAbsences.ResumeLayout(false);
             this.grbAjoutAbsences.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAbsences)).EndInit();
             this.ResumeLayout(false);
 
         }

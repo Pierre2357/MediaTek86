@@ -76,8 +76,9 @@
             this.btnConnect.TabIndex = 4;
             this.btnConnect.Text = "se connecter";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // Connexion
+            // FrmConnexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -87,9 +88,8 @@
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.lblPwd);
             this.Controls.Add(this.lblLogin);
-            this.Name = "Connexion";
+            this.Name = "FrmConnexion";
             this.Text = "Connexion";
-            this.Load += new System.EventHandler(this.Connexion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

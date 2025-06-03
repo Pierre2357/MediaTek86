@@ -12,26 +12,35 @@ namespace MediaTek86.modele
     public class Absence
     {
         /// <summary>
-        /// Propriétés de la classe (correspondant aux champs de la table absence de la base de données)
+        /// Propriété de la classe absence de la base de données
         /// </summary>
-        public int Idpersonnel { get; }
+        public Personnel Personnel { get; }
+        /// <summary>
+        /// Propriété de la classe absence de la base de données
+        /// </summary>
         public DateTime Datedebut { get; }
+        /// <summary>
+        /// Propriété de la classe absence de la base de données
+        /// </summary>
         public DateTime Datefin { get; set; }
-        public int Idmotif { get; set; }
+        /// <summary>
+        /// Propriété de la classe absence de la base de données
+        /// </summary>
+        public Motif Motif { get; set; }
 
         /// <summary>
         /// Constructeur de la classe pour valoriser les propriétés
         /// </summary>
-        /// <param name="idpersonnel"></param>
+        /// <param name="personnel"></param>
         /// <param name="datedebut"></param>
         /// <param name="datefin"></param>
-        /// <param name="idmotif"></param>
-        public Absence(int idpersonnel, DateTime datedebut, DateTime datefin, int idmotif)
+        /// <param name="motif"></param>
+        public Absence(Personnel personnel, DateTime datedebut, DateTime datefin, Motif motif)
         {
-            this.Idpersonnel = idpersonnel;
+            this.Personnel = personnel;
             this.Datedebut = datedebut;
             this.Datefin = datefin;
-            this.Idmotif = idmotif;
+            this.Motif = motif;
         }
     }
 }

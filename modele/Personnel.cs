@@ -12,13 +12,28 @@ namespace MediaTek86.modele
     public class Personnel
     {
         /// <summary>
-        /// Propriétés de la classe (correspondant aux champs de la table personnel de la base de données)
+        /// Propriété de la classe personnel de la base de données
         /// </summary>
         public int Idpersonnel { get; }
+        /// <summary>
+        /// Propriété de la classe personnel de la base de données
+        /// </summary>
         public string Nom { get; set; }
+        /// <summary>
+        /// Propriété de la classe personnel de la base de données
+        /// </summary>
         public string Prenom { get; set; }
+        /// <summary>
+        /// Propriété de la classe personnel de la base de données
+        /// </summary>
         public string Tel { get; set; }
+        /// <summary>
+        /// Propriété de la classe personnel de la base de données
+        /// </summary>
         public string Mail { get; set; }
+        /// <summary>
+        /// Propriété de la classe personnel de la base de données
+        /// </summary>
         public Service Service { get; set; }
 
         /// <summary>
