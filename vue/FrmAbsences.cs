@@ -144,10 +144,13 @@ namespace MediaTek86.vue
                     Boolean disponible = true;
                     foreach (Absence absence in lesAbsences)
                     {
-                        if (!(dtpFinAbsence.Value < absence.Datedebut || dtpDebutAbsence.Value > absence.Datefin) && absence != (Absence)bdgAbsences.List[bdgAbsences.Position])
+                        if (absence != (Absence)bdgAbsences.List[bdgAbsences.Position])
                         {
-                            disponible = false;
-                            break;
+                            if (!(dtpFinAbsence.Value < absence.Datedebut || dtpDebutAbsence.Value > absence.Datefin))
+                            {
+                                disponible = false;
+                                break;
+                            }
                         }
                     }
 
